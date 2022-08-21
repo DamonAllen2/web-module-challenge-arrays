@@ -149,9 +149,9 @@ Use the removeFlavorByName function below to do the following:
 
 function removeFlavorByName(originalFlavors, index){
   originalFlavors.splice(index);
-  return orignalFlavors;
+  return originalFlavors;
 }
-removeFlavorByName(orignalFlavors, "Rocky Road")
+removeFlavorByName(originalFlavors, "Rocky Road")
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
