@@ -46,10 +46,11 @@ Use the copy function below to do the following:
 */
 
 
-function copy(/*your code here*/){
-  /*your code here*/
-}
-
+function copy(originalFlavors) {
+  const flavorCopy = [...originalFlavors];
+   return flavorCopy; 
+ }
+ copy(originalFlavors)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -63,10 +64,16 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-  /*your code here*/
+function is31Flavors(originalFlavors) {
+  if (originalFlavors = 31) {
+    console.log(true);
+    return true;
+  } else {
+    console.log(false); 
+    return false;
+  }
  }
-
+is31Flavors(originalFlavors)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
