@@ -133,6 +133,7 @@ function getFlavorByIndex(originalFlavors, index){
 
 
 
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that single flavor from the array.  
 
@@ -147,12 +148,16 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(originalFlavors, index){
-  originalFlavors.splice(index);
+function removeFlavorByName(originalFlavors, deleteFlavor){
+  for(let i = 0; i < originalFlavors.length; i++) {
+    if(originalFlavors[i] === deleteFlavor) {
+      originalFlavors.splice(i, 1);
+    }
+  }
   return originalFlavors;
 }
-removeFlavorByName(originalFlavors, "Rocky Road")
 
+removeFlavorByName(originalFlavors, "Rocky Road")
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
